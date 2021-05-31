@@ -13,15 +13,28 @@ public class caesar {
         shiftKey = aScanner.nextInt();
 
 
-        sytem.out.prIntIn("The Encrypted Text:"+EncryptedText(pLainText,shiftKey));
+//        sytem.out.prIntIn("The Encrypted Text:"+EncryptedText(pLainText,shiftKey));
     }
 
-public static  String EncryptedText(String message, int shiftKey) {
+public static  String cyperText(String message, int shiftKey) {
 //    c(x) = x + shiftKey Mod(%) 26 ;
     final String ALPHABETS = "abcdefghijklmnopqrstuvwxyz";
     message = message.toLowerCase();
+
     StringBuilder cypherText = new StringBuilder();
-    for (int counter = 0; counter < message.length(); counter++)
+    int counter;
+    for (counter = 0; counter < message.length(); counter++) ;
+    if (!Character.isLetter(message.charAt(counter))) {
+
+        cypherText.append(message.charAt(counter));
+
+
+    else int charPosition = ALPHABETS.indexOf(message.charAt(counter));
+        char typeValue = ALPHABETS.charAt(keyValue);
+        cypherText.append(cyperValue);
+    }
 }
+return cyperText.toString();
+        }
 
 
